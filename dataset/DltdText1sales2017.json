@@ -1,0 +1,32 @@
+{
+	"name": "DltdText1sales2017",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1_ADF_St_Acc",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "sales2017.txt",
+				"container": "incr1loadsource"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
+	}
+}
